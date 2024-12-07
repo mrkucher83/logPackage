@@ -1,3 +1,8 @@
+// A log is an append-only sequence of records (binary-encoded messages).
+// When the log grows too big, we free up disk space by deleting old segments
+// whose data we’ve already processed or archived.
+// Store—the file we store records in.
+
 package log
 
 import (
